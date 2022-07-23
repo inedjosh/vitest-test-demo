@@ -40,11 +40,3 @@ it("should throw an error if params is empty", () => {
 
   expect(result).toThrow();
 });
-
-it("should throw an error if params is empty", () => {
-  let param;
-
-  const result = () => validateNumber(param);
-
-  expect(result).toThrow();
-});
