@@ -1,5 +1,13 @@
-import { it, expect } from "vitest";
+import { it, expect, beforeAll, beforeEach } from "vitest";
 import { validateNumber, validateStringNotEmpty } from "./validation";
+
+beforeAll(() => {
+  console.log("beforeAl()");
+});
+
+beforeEach(() => {
+  console.log("beforeEach()");
+});
 
 it("should not throw an error if param does have a lenght", () => {
   const param = "hello";
